@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yallah Agency - Discover the World</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="icon" href="un_logo_for_my_agence_travel_que_je_nomme_yallah_agency_avec_un__slogan___let_s_explore_together...-removebg-preview.png">
+
+  
+  <style>
+    /* Header and Footer Colors */
+    header {
+      background-color: #1a73e8;
+    }
+
+    footer {
+      background-color: #1a73e8;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
+    }
+
+    .hero-section img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    .container.text-center {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      background-color: rgba(255, 251, 251, 0.057);
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      color: white;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #120d3a;
+      border-color: #120d3a;
+      font-size: 1.1rem;
+      padding: 10px 30px;
+      transition: background-color 0.3s ease;
+      
+    }
+
+    .btn-primary:hover {
+      background-color: #ff4a3d;
+      border-color: #ff4a3d;
+    }
+
+    /* Card Styling */
+    .row .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .card-body {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card-img-top {
+      max-height: 200px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .card {
+      min-height: 400px;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .nav-item{
+        color: #f4f3f09d !important;
+            font-weight: 500;
+            margin-right: 15px;
+    }
+    footer a {
+            color: aliceblue;
+        }
+
+    /* Client Reviews Section */
+    .client-reviews {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+      border: 2px solid #fcfdff; /* Added border styling */
+    }
+
+    .client-reviews h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 40px;
+    }
+
+    .review-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      text-align: center;
+    }
+
+    .review-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .review-card h4 {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .review-card p {
+      font-size: 1rem;
+      color: #6c757d;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+        .hero-section h1 {
+            font-size: 2rem; /* Smaller font size for mobile */
+        }
+        .btn-primary {
+            font-size: 1rem; /* Smaller button size */
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .hero-section h1 {
+            font-size: 2.5rem; /* Medium font size for tablets */
+        }
+    }
+
+    @media (min-width: 1025px) {
+        .hero-section h1 {
+            font-size: 3rem; /* Default font size for desktops */
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a73e8;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="un_logo_for_my_agence_travel_que_je_nomme_yallah_agency_avec_un__slogan___let_s_explore_together...-removebg-preview.png" alt="Yallah Agency Logo" style="max-width: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <img src="fond.png" alt="travel">
+    <div class="container text-center">
+      <h1>Discover the World with Yallah Agency</h1>
+      <p>Your adventure begins here!</p>
+      <blockquote>
+        "Travel is the only thing you buy that makes you richer."
+        <footer style="background-color: transparent;">- Anonymous</footer>
+      </blockquote>
+      <a href="#packages" class="btn btn-primary">Explore Packages</a>
+    </div>
+  </section>
+
+  <!-- Destinations Section -->
+  <section id="destinations" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Popular Destinations</h2>
+      <div class="row"> <!-- Added row class here -->
+        <!-- Repeatable Card Structure -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="paris1.png" class="card-img-top" alt="paris">
+            <div class="card-body">
+              <h5 class="card-title">Paris, France</h5>
+              <p class="card-text">Explore the City of Love with its iconic landmarks.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card for Bali -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="bali.png" class="card-img-top" alt="Bali">
+            <div class="card-body">
+              <h5 class="card-title">Bali, Indonesia</h5>
+              <p class="card-text">Experience tropical paradise and cultural beauty.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card for New York -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="nyc1.png" class="card-img-top" alt="usa">
+            <div class="card-body">
+              <h5 class="card-title">New York, USA</h5>
+              <p class="card-text">Visit the bustling city that never sleeps.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card for Tokyo -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="tokyo.png" class="card-img-top" alt="Tokyo">
+            <div class="card-body">
+              <h5 class="card-title">Tokyo, Japan</h5>
+              <p class="card-text">Explore the perfect blend of tradition and technology.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card for Sydney -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="australia12.png" class="card-img-top" alt="Australia">
+            <div class="card-body">
+              <h5 class="card-title">Sydney, Australia</h5>
+              <p class="card-text">Discover the beauty of the iconic Opera House and beaches.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card for Rome -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="rome1.png" class="card-img-top" alt="rome">
+            <div class="card-body">
+              <h5 class="card-title">Rome, Italy</h5>
+              <p class="card-text">Step back in time and visit ancient landmarks.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="dubai1.jpg" class="card-img-top" alt="dubai">
+            <div class="card-body">
+              <h5 class="card-title">Dubai, UAE</h5>
+              <p class="card-text">A city of luxury featuring the Burj Khalifa and world-class shopping.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="reyice.jpg" class="card-img-top" alt="iceland">
+            <div class="card-body">
+              <h5 class="card-title">Reykjavik, Iceland</h5>
+              <p class="card-text">The gateway to Iceland's natural wonders, including the Northern Lights.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="brazil.png" class="card-img-top" alt="rion de janerio">
+            <div class="card-body">
+              <h5 class="card-title">Rio de Janeiro, Brazil</h5>
+              <p class="card-text">Known for its Carnival festival and beautiful beaches.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Cape Town, South Africa.jpg" class="card-img-top" alt="cape town">
+            <div class="card-body">
+              <h5 class="card-title">Cape Town, South Africa</h5>
+              <p class="card-text">A vibrant city with stunning landscapes, including Table Mountain.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- Destination 5: Kyoto -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="kyoto japon.jpg" class="card-img-top" alt="kyoto">
+            <div class="card-body">
+              <h5 class="card-title">Kyoto, Japan</h5>
+              <p class="card-text">A city of temples and cherry blossoms, offering a glimpse into Japan's history.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End of row -->
+    </div>
+  </section>
+  <section class="client-reviews">
+    <div class="container">
+      <h2>What Our Clients Say</h2>
+      <div id="clientReviewsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="review-card">
+              <img src="client1.jpg" alt="Client 1">
+              <h4>John Doe</h4>
+              <p>"Yallah Agency planned an amazing trip for me. The attention to detail was impressive, and I had a wonderful experience."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="review-card">
+              <img src="client2.jpg" alt="Client 2">
+              <h4>Jane Smith</h4>
+              <p>"I highly recommend Yallah Agency. They made my travel planning so easy and stress-free. I'll definitely use them again."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="review-card">
+              <img src="client1.png" alt="Client 3">
+              <h4>Michael Johnson</h4>
+              <p>"The team at Yallah Agency was incredibly helpful and responsive. They tailored the trip to my exact needs and preferences."</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#clientReviewsCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#clientReviewsCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+        <p>&copy; 2025 Yallah Agency. All rights reserved.</p>
+        <div>
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a> |
+            <a href="https://instagram.com" target="_blank">instagram</a>
+        </div>
+    </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script><!-- Include Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
